@@ -2,50 +2,133 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Site oficial do jogo HospitalRush, desenvolvido com Pygame. Jogue agora e divirta-se montando kits e estratégias!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HospitalRush: jogo de ação e estratégia com kits médicos, tempo e atendimento rápido. Mais puro estilo indie brasileiro." />
   <title>HospitalRush</title>
-  <link rel="stylesheet" href="reset.css"/>
+  <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="style.css" />
-
 </head>
 <body>
-
   <header>
     <nav>
       <a href="#hero">Início</a>
+      <a href="#recursos">Recursos</a>
       <a href="#galeria">Galeria</a>
       <a href="#sobre">Sobre</a>
+      <a href="#como-jogar">Como Jogar</a>
     </nav>
   </header>
 
   <main>
-    <section id="hero">
-      <img class = "imagem_central" src="img/capanova.png" alt="Capa do jogo HospitalRush" />
-      <a href="#" class="chatgpt-icon"><img src="img/ChatGPT Image 26 de abr. de 2026, 19_25_00.png" alt="Ícone ChatGPT" /></a>
-      <button>Jogar Agora</button>
-    </section>
-
-    <section id="galeria">
-      <h2>MEDIA GALERY</h2>
-      <div class="galeria">
-        <img src="img/rascunho_site.jpeg" alt="Screenshot 1 do jogo HospitalRush" />
-        <img src="img/rascunho_site.jpeg" alt="Screenshot 2 do jogo HospitalRush" />
-        <img src="img/rascunho_site.jpeg" alt="Screenshot 3 do jogo HospitalRush" />
+    <section id="hero" class="hero-section">
+      <div class="hero-copy">
+        <span class="eyebrow">Cooperação hospitalar</span>
+        <h1>HospitalRush</h1>
+        <p>Prepare kits, atenda pacientes e vença o relógio em uma corrida cooperativa de ação hospitalar.</p>
+        <div class="hero-buttons">
+          <a href="#galeria" class="btn btn-primary">Jogar Agora</a>
+          <a href="#como-jogar" class="btn btn-secondary">Como Jogar</a>
+          <a href="#" class="btn btn-tertiary">Ver Trailer</a>
+        </div>
+        <div class="hero-notes">
+          <span>Pressão de tempo</span>
+          <span>Modo co-op</span>
+          <span>Fases emocionantes</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img class="hero-image" src="img/capanova.png" alt="Capa do jogo HospitalRush" />
+        <img class="chatgpt-icon" src="img/image.png" alt="ChatGPT Icon" />
       </div>
     </section>
 
-    <section id="sobre">
-      <h2>Sobre o Jogo</h2>
-      <p>Monte os kits ideais de acordo com a demanda!</p>
-      <p>Monte sua estratégia com sua dupla para obter a melhor pontuação!</p>
-      <p>Fique atento ao tempo de entrega para não perder pontos.</p>
+    <section id="recursos" class="features">
+      <div class="section-title">
+        <h2>Recursos</h2>
+        <span>Entenda o que torna HospitalRush único</span>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon">⏱️</div>
+          <h3>Tempo apertado</h3>
+          <p>Fases com ritmo acelerado que exigem decisões rápidas e foco constante.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">🧰</div>
+          <h3>Kits inteligentes</h3>
+          <p>Combine itens e monte equipamentos médicos antes que o paciente perca tempo.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3>Cooperação</h3>
+          <p>Trabalhe em equipe para coordenar entregas e vencer os desafios juntos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="galeria" class="gallery-section">
+      <div class="section-title">
+        <h2>Galeria</h2>
+        <span>Visão rápida do estilo do jogo</span>
+      </div>
+      <div class="gallery-grid">
+        <article class="gallery-card">
+          <img src="img/rascunho_site.jpeg" alt="Screenshot 1 do jogo HospitalRush" />
+        </article>
+        <article class="gallery-card">
+          <img src="img/rascunho_site.jpeg" alt="Screenshot 2 do jogo HospitalRush" />
+        </article>
+        <article class="gallery-card">
+          <img src="img/rascunho_site.jpeg" alt="Screenshot 3 do jogo HospitalRush" />
+        </article>
+      </div>
+    </section>
+
+    <section id="sobre" class="about-section">
+      <div class="section-title">
+        <h2>Sobre o Jogo</h2>
+        <span>Uma experiência hospitalar intensa e divertida</span>
+      </div>
+      <div class="about-content">
+        <div class="about-copy">
+          <p><strong>HospitalRush</strong> é um jogo cooperativo desenvolvido em Pygame com foco em <strong>ação rápida</strong>, <strong>coordenação</strong> e <strong>pressão de tempo</strong>.</p>
+          <p>Monte kits, use equipamentos especiais e entregue as peças certas antes que o relógio acabe.</p>
+          <p>Perfeito para quem curte jogos de <strong>overcooked</strong> com tema hospitalar.</p>
+        </div>
+        <div class="about-image-wrap">
+          <img src="img/imagem_sobre .png" alt="Ilustração do HospitalRush" class="about-image" />
+        </div>
+      </div>
+    </section>
+
+    <section id="como-jogar" class="how-to-play">
+      <div class="section-title">
+        <h2>Como Jogar</h2>
+        <span>Passos rápidos para começar</span>
+      </div>
+      <div class="steps">
+        <article class="step">
+          <div class="step-number">1</div>
+          <h3>Escolha o kit</h3>
+          <p>Monte rapidamente o kit médico certo para cada paciente.</p>
+        </article>
+        <article class="step">
+          <div class="step-number">2</div>
+          <h3>Entregue no tempo</h3>
+          <p>Corra pelo hospital e entregue antes que o relógio zere.</p>
+        </article>
+        <article class="step">
+          <div class="step-number">3</div>
+          <h3>Aprimore sua estratégia</h3>
+          <p>Combine ações e coopere para vencer fases mais difíceis.</p>
+        </article>
+      </div>
     </section>
   </main>
 
   <footer>
-    2026 - HospitalRush - Desenvolvido com Pygame - Mateus gama & Ryan
+    <p>2026 - HospitalRush - Desenvolvido com Pygame</p>
+    <p>Mateus Gama &amp; Ryan</p>
   </footer>
-
 </body>
 </html>
