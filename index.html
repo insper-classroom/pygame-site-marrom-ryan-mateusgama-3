@@ -16,8 +16,9 @@
       <a href="#galeria">Galeria</a>
       <a href="#sobre">Sobre</a>
       <a href="#como-jogar">Como Jogar</a>
-      <a href="#avaliacao-crap">Avaliação CRAP</a>
+      <a href="#como-executar">Como Executar</a>
       <a href="#dev-log">Log de Desenvolvimento</a>
+      <a href="#avaliacao-crap">Avaliação CRAP</a>
     </nav>
   </header>
 
@@ -28,7 +29,7 @@
         <h1>HospitalRush</h1>
         <p>Prepare kits, atenda pacientes e vença o relógio em uma corrida cooperativa de ação hospitalar.</p>
         <div class="hero-buttons">
-          <a href="#galeria" class="btn btn-primary">Jogar Agora</a>
+          <a href="PYGAME.zip" download class="btn btn-primary">Download</a>
           <a href="#como-jogar" class="btn btn-secondary">Como Jogar</a>
           <a href="#" class="btn btn-tertiary">Ver Trailer</a>
         </div>
@@ -132,60 +133,34 @@
         </article>
       </div>
     </section>
-    <section id="avaliacao-crap" class="crap-section">
+    <section id="como-executar" class="how-to-play">
       <div class="section-title">
-        <h2>Avaliação CRAP</h2>
-        <span>Feedback recebido do Davi sobre o design do site</span>
+        <h2>Como Executar</h2>
+        <span>Passo a passo para rodar o jogo após o download</span>
       </div>
-
-      <div class="crap-pdf-block">
-        <h3 class="crap-subsection-title">Relatório PDF</h3>
-        <div class="crap-pdf-wrapper">
-          <iframe
-            src="avaliacao_crep_recebida/feed_crap.pdf"
-            title="Avaliação CRAP recebida"
-            class="crap-pdf"
-          ></iframe>
-        </div>
-        <a
-          href="avaliacao_crep_recebida/feed_crap.pdf"
-          target="_blank"
-          rel="noopener"
-          class="btn btn-secondary crap-pdf-link"
-        >Abrir PDF em nova aba</a>
-      </div>
-
-      <div class="crap-pdf-block">
-        <h3 class="crap-subsection-title">Avaliação Conceitos CRAP – HospitalRush</h3>
-        <div class="crap-pdf-wrapper">
-          <iframe
-            src="avaliação_crap_recebida_ryan/Avaliação Conceitos CRAP - HospitalRush.pdf"
-            title="Avaliação Conceitos CRAP - HospitalRush"
-            class="crap-pdf"
-          ></iframe>
-        </div>
-        <a
-          href="avaliação_crap_recebida_ryan/Avaliação Conceitos CRAP - HospitalRush.pdf"
-          target="_blank"
-          rel="noopener"
-          class="btn btn-secondary crap-pdf-link"
-        >Abrir PDF em nova aba</a>
-      </div>
-
-      <div class="crap-screenshots">
-        <div class="crap-screenshot-block">
-          <h3 class="crap-subsection-title">Site antigo</h3>
-          <div class="crap-img-wrap">
-            <img src="img/rascunho_site.jpeg" alt="Print do site antigo" class="crap-img" />
-          </div>
-        </div>
-
-        <div class="crap-screenshot-block">
-          <h3 class="crap-subsection-title">Site atual</h3>
-          <div class="crap-img-wrap">
-            <img src="img/rascunho_site.jpeg" alt="Print do site atual" class="crap-img" />
-          </div>
-        </div>
+      <div class="steps">
+        <article class="step">
+          <div class="step-number">1</div>
+          <h3>Baixe o arquivo</h3>
+          <p>Clique no botão <strong>Download</strong> e salve o arquivo <code>PYGAME.zip</code> no seu computador.</p>
+        </article>
+        <article class="step">
+          <div class="step-number">2</div>
+          <h3>Extraia o ZIP</h3>
+          <p>Clique com o botão direito no arquivo e selecione <strong>"Extrair tudo"</strong> (Windows) ou use qualquer descompactador.</p>
+        </article>
+        <article class="step">
+          <div class="step-number">3</div>
+          <h3>Instale as dependências</h3>
+          <p>Certifique-se de ter o <strong>Python 3</strong> instalado. Depois, abra o terminal na pasta extraída e execute:</p>
+          <p><code>pip install pygame Pillow numpy</code></p>
+        </article>
+        <article class="step">
+          <div class="step-number">4</div>
+          <h3>Execute o jogo</h3>
+          <p>No terminal, dentro da pasta extraída, rode o comando:</p>
+          <p><code>python jogo.py</code></p>
+        </article>
       </div>
     </section>
 
@@ -259,6 +234,63 @@
           </div>
         </article>
 
+      </div>
+    </section>
+
+    <section id="avaliacao-crap" class="crap-section">
+      <div class="section-title">
+        <h2>Avaliação CRAP</h2>
+        <span>Feedback recebido do Davi sobre o design do site</span>
+      </div>
+
+      <div class="crap-pdf-block">
+        <h3 class="crap-subsection-title">Relatório PDF</h3>
+        <div class="crap-pdf-wrapper">
+          <iframe
+            src="avaliacao_crep_recebida/feed_crap.pdf"
+            title="Avaliação CRAP recebida"
+            class="crap-pdf"
+          ></iframe>
+        </div>
+        <a
+          href="avaliacao_crep_recebida/feed_crap.pdf"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-secondary crap-pdf-link"
+        >Abrir PDF em nova aba</a>
+      </div>
+
+      <div class="crap-pdf-block">
+        <h3 class="crap-subsection-title">Avaliação Conceitos CRAP – HospitalRush</h3>
+        <div class="crap-pdf-wrapper">
+          <iframe
+            src="avaliação_crap_recebida_ryan/Avaliação Conceitos CRAP - HospitalRush.pdf"
+            title="Avaliação Conceitos CRAP - HospitalRush"
+            class="crap-pdf"
+          ></iframe>
+        </div>
+        <a
+          href="avaliação_crap_recebida_ryan/Avaliação Conceitos CRAP - HospitalRush.pdf"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-secondary crap-pdf-link"
+        >Abrir PDF em nova aba</a>
+      </div>
+
+      <div class="crap-screenshots">
+        <div class="crap-screenshot-block">
+          <h3 class="crap-subsection-title">Site antigo</h3>
+          <div class="crap-img-wrap">
+            <img src="img/rascunho_site.jpeg" alt="Print do site antigo" class="crap-img" />
+          </div>
+        </div>
+
+        <div class="crap-screenshot-block">
+          <h3 class="crap-subsection-title">Site atual</h3>
+          <div class="crap-img-wrap">
+            <img src="img/rascunho_site.jpeg" alt="Print do site atual" class="crap-img" />
+          </div>
+        </div>
       </div>
     </section>
   </main>
