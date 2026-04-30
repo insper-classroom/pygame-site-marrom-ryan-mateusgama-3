@@ -10,6 +10,9 @@
 </head>
 <body>
   <header>
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+      Menu <span class="nav-arrow">▼</span>
+    </button>
     <nav>
       <a href="#hero">Início</a>
       <a href="#recursos">Recursos</a>
@@ -388,5 +391,21 @@
     <p>2026 - HospitalRush - Desenvolvido com Pygame</p>
     <p>Mateus Gama &amp; Ryan</p>
   </footer>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('nav-open');
+      toggle.setAttribute('aria-expanded', open);
+      toggle.querySelector('.nav-arrow').textContent = open ? '▲' : '▼';
+    });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('nav-open');
+        toggle.setAttribute('aria-expanded', false);
+        toggle.querySelector('.nav-arrow').textContent = '▼';
+      });
+    });
+  </script>
 </body>
 </html>
